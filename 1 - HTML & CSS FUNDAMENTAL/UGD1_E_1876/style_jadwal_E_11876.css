@@ -1,0 +1,39 @@
+body{
+    background: linear-gradient(to left, #ff7e5f, #feb47b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.rectangle{
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    flex-direction: column;
+    padding:5px;
+}
+.meja{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+td,th{
+   padding: 8px;
+   border: black solid;
+   text-align: center;
+   
+}
+.sesi{
+    background-color: orange;
+}
+.link{
+    height: 5vh;
+    border: 0px;
+}
+
+td:hover{
+    background-color: lime;
+}

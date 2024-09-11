@@ -1,0 +1,132 @@
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background: linear-gradient(to left, #ff7e5f, #feb47b);
+}
+.rectangle{
+    height: 600px;
+    width: 600px;
+    background: transparent;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    flex-direction: column;
+    padding-left : 300px;
+    padding-right: 300px;
+    box-shadow: 5px 5px 10px black;
+    background-image: url(https://64.media.tumblr.com/edf5e89f8d144562fec15ac1b02483e7/1de8f753d0db6321-25/s540x810/b555371f61578cb4fe416e41986227f67936cd77.gifv);
+    background-size: 1550px;
+    background-position-y: 25%;
+    background-position-x: 50%;
+}
+
+.judul{
+    background-image: url(test.png);
+    height: 264px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 306px;
+    margin-bottom: 190px;
+    background-position: left;
+}
+
+.tombol{
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #d42424;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 80%;
+    text-decoration: none;
+}
+
+
+.tombol:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.tombol:active {
+    color: #000
+}
+
+.tombol:active:after {
+    background: transparent;
+}
+
+.tombol:hover:before {
+    opacity: 1;
+}
+
+.tombol:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.tombol:hover::after{
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000;
+    opacity: 90%;
+}
+
+.tombol:hover{
+    color: #000;
+    border-width: 3px;
+    border-color: #000;
+    border-style:double;
+    font-weight: bold;
+}
+.meja{
+    display: flex;
+}
+td{
+    padding: 8px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
